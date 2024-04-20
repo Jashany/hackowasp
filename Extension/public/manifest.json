@@ -11,7 +11,9 @@
         "https://*/*"
     ],
     "permissions": [
-      "scripting"
+      "scripting",
+        "activeTab",
+        "tabs"
     ],
     "icons":{
         "32": "icon.png"
