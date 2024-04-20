@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "My React Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension built with React",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "host_permissions" : [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "permissions": [
+      "scripting"
+    ],
+    "icons":{
+        "32": "icon.png"
+    }
+  }
+  
