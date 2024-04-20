@@ -30,14 +30,13 @@ const Signin = () => {
        console.log("hi")
       }
     return ( 
-        <div className={styles.main}>
-        
-            <div className={styles.innermain}>
-                
+   
                 <div className={styles.form}>
+                    
                     <form>
+                    <h1>Log In</h1>
                     <label>
-                        Email
+                        Email:
                         <input 
                         type='email'
                         name='email'
@@ -49,22 +48,21 @@ const Signin = () => {
                          {errors.email && <p className={styles.error}>{errors.email}</p>}
                     </label>
                     <label>
-                        Password
+                        Password:
                         <input 
                         required={true}
                         type='password' 
                         name='password'
-                        placeholder='Your_Password'
+                        placeholder='yourpassword'
                         value={password}
                         onChange={handlePasswordChange} />
                           {errors.password && <p className={styles.error}>{errors.password}</p>}
                     </label>
                     <button onClick={submitHandler}>Login</button>
-                    </form>
                     <p>Haven't signed up yet? Sign Up!</p>
+                    </form>
                 </div>
-            </div>
-        </div>
+
      );
 }
  
